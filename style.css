@@ -8,6 +8,8 @@ body{
     display: flex;
     flex-direction: column;
     background: url(img/coffee-1869820_1920.jpg) no-repeat center center/ cover;
+    background-position: center;
+    min-width: 55%;
 }
 .container{
     display: flex;
@@ -15,8 +17,12 @@ body{
     flex-direction: column;
     margin: 2rem auto;
 }
+
+
 .add-task-container{
-    min-width: 100%;
+    min-width: 55%;
+
+
     padding: 1rem .9rem;
     margin: 1.2rem auto;
     background: #fff;
@@ -105,7 +111,7 @@ footer span{
     text-align: center;
     font-size: 1.2rem;
     font-weight: 700;
-    padding: 18px;
+    padding: 14px;
     transform: rotate(90deg);
     transform-origin: bottom left;
     position: absolute;
@@ -149,4 +155,25 @@ footer a{
     footer{
         display: none;
     }
+}
+
+@media screen and (max-width: 372px) {
+    body{
+        max-width: 100%;
+    }
+    .add-task-container{
+        padding: .2rem;
+        margin: 0;
+        text-align: center;
+    }
+    input{
+        padding: 0;
+        flex: none;
+        border: none;
+    }
+    #add-task{
+        padding: 0;
+        margin: 0;
+    }
+
 }

@@ -159,9 +159,10 @@ footer a{
 
 @media screen and (max-width: 372px) {
     body{
-        max-width: 97%;
+        width: 100%;
     }
     .add-task-container{
+        max-width: 97%;
         padding: .2rem;
         margin-bottom: 1rem;
         text-align: center;
@@ -180,7 +181,7 @@ footer a{
         font-size: 1.2rem;
     }
     .delete-btn{
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     li{
         font-size: 1.2rem;
@@ -191,9 +192,10 @@ footer a{
 
 @media screen and (max-width: 312px){
     body{
-        max-width: 95%;
+        max-width: 100%;
     }
     .add-task-container{
+        max-width: 90%;
         margin-bottom: .8rem;
         padding: .1rem;
         text-align: center;
@@ -207,12 +209,12 @@ footer a{
         margin: .1rem;
     }
     .check-btn{
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     .delete-btn{
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     li{
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 }

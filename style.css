@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: url(img/coffee-1869820_1920.jpg) no-repeat center center/ cover;
+}
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem auto;
+}
+.add-task-container{
+    min-width: 100%;
+    padding: 1rem .9rem;
+    margin: 1.2rem auto;
+    background: #fff;
+    box-shadow: 0 0 3px;
+    border-radius: 1rem;
+    margin-bottom: 1.2rem;
+    display: flex;
+}
+input{
+    flex: 5;
+    padding: .5rem 1.1rem;
+    border-radius: 1rem;
+    margin-right: 1.2rem;
+    font-size: 1.2rem;
+}
+#add-task {
+    border: 2px solid orange;
+    border-radius: .4rem;
+    flex: 1.5;
+    transition: .5s;
+    font-size: 2.2rem;
+    color: orange;
+    cursor: pointer;
+}
+#add-task:hover{
+    background-color: orange;
+    color: #fff;
+}
+
+.task-container{
+    width: 100%;
+}
+
+
+.task{
+    padding: .7rem;
+    box-shadow: 0 0 3px;
+    margin-bottom: .5rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 5;
+    
+    
+
+}
+li{
+    list-style: none;
+    font-size: 1.3rem;
+    flex: 2;
+    
+} 
+.task button{
+    border-radius: .4rem;
+    transition: .5s;
+    cursor: pointer;
+}
+.check-btn{
+    border: 1px solid rgb(2, 141, 2);
+    margin-right: .5rem;
+    font-size: 2em;
+    padding: 0 .5rem;
+    color: rgb(2, 141, 2);
+}
+.check-btn:hover{
+    color: #fff;
+    background-color: rgb(2, 141, 2);
+    
+}
+
+.delete-btn{
+    border: 1px solid rgb(170, 41, 1);
+    font-size: 2rem;
+    padding: 0 .5rem;
+    color: rgb(170, 41, 1);
+}
+.delete-btn:hover{
+    color: #fff;
+    background-color: rgb(117, 27, 0);
+    
+}
+
+footer span{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 18px;
+    transform: rotate(90deg);
+    transform-origin: bottom left;
+    position: absolute;
+    left: 0;
+    top: 5rem;
+    border-radius: .7rem;
+    letter-spacing: .2rem;
+    background-image: linear-gradient(to right, rgb(207, 29, 16), rgb(18, 18, 238));
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    
+}
+footer span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-image: linear-gradient(to right, rgb(223, 226, 26), rgb(245, 8, 8), rgb(13, 13, 226)); */
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: animate .5s linear infinite;
+}
+@keyframes animate {
+    0% {
+      background-position: left;
+    }
+    100% {
+      background-position: right;
+    }
+  }
+footer a{
+    text-decoration: none;
+    color: green;
+    transition: .5s;
+}
+
+
+@media screen and (max-width: 465px) {
+    footer{
+        display: none;
+    }
+}
